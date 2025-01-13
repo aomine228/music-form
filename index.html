@@ -13,10 +13,12 @@
     </div>
 
     <div class="form-container">
-        <form action="#">
+        <form action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data">
+
+            <input type="hidden" name="access_key" value="0c52600a-e58a-4b80-893d-4b8f7b2c9b4e">
 
             <div class="form-group">
-                <label for="music-preference">Який Ваш улюблений жанр музики?</label>
+                <label for="music-preference">Якому жанру надаєте перевагу?</label>
                 <select name="music-preference" id="music-preference">
                     <option value="nothing"></option>
                     <option value="pop">Поп</option>
@@ -32,7 +34,7 @@
             </div>
 
             <div class="form-group">
-                <label for="file-upload">Завантажте зображення:</label>
+                <label for="file-upload">Завантажити зображення:</label>
                 <input type="file" id="file-upload" name="file-upload" accept="image/*">
             </div>
 
